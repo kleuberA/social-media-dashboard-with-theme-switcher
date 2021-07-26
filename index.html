@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+  .attribution { font-size: 11px; text-align: center; }
+  .attribution a { color: hsl(228, 45%, 44%); }
+</style>
+</head> 
+<body data-body>
+  <nav class="navbar" data-navBar>
+    <h1 class="titlePrincipal" data-tituloPrincipal>Social Media Dashboard</h1>
+    <p class="comment" data-comment>Total Followers: 23,004</p>
+    <div class="slider-checkbox">
+    <p class="darkMode" data-darkMode>Dark Mode</p>
+    <input type="checkbox" id="slider_checkbox_1"  name="slider_checkbox" data-botaoDarkMode class="darkMode">
+    <label for="slider_checkbox_1"></label>
+  </div> 
+  </nav>
+
+  <main class="container" data-container>
+    <div class="containerSocialGrid">
+      <div class="socialFacebook" data-socialFacebook>
+        <img src="images/icon-facebook.svg" class="iconSocial" align="left">
+        <h1 class="contactSocial" data-contactSocial>@nathanf</h1>
+        <span class="numberFollows" data-numberFollow>1987</span>
+        <span class="textFollowers" data-textFollow>FOLLOWERS</span>
+        <img class="upFollows" src="images/icon-up.svg"></img>
+        <span class="numberDays" data-numberDays>12 Today</span>
+      </div>
+      <div class="socialTwitter" data-socialTwitter>
+        <img src="images/icon-twitter.svg" class="iconSocial" align="left">
+        <h1 class="contactSocial" data-contactSocial>@nathanf</h1>
+        <span class="numberFollows" data-numberFollow>1044</span>
+        <span class="textFollowers" data-textFollow>FOLLOWERS</span>
+        <img class="upFollows" src="images/icon-up.svg"></img>
+        <span class="numberDays" data-numberDays>99 Today</span>
+      </div>
+      <div class="socialInstagram" data-socialInstagram>
+        <img src="images/icon-instagram.svg" class="iconSocial" align="left">
+        <h1 class="contactSocial" data-contactSocial>@realnathanf</h1>
+        <span class="numberFollows" data-numberFollow>11k</span>
+        <span class="textFollowers" data-textFollow>FOLLOWERS</span>
+        <img class="upFollows" src="images/icon-up.svg"></img>
+        <span class="numberDays" data-numberDays>1099 Today</span>
+      </div>
+      <div class="socialYoutube" data-socialYoutube>
+        <img src="images/icon-youtube.svg" class="iconSocial" align="left">
+        <h1 class="contactSocial" data-contactSocial>Nathan F.</h1>
+        <span class="numberFollows" data-numberFollow>8239</span>
+        <span class="textFollowers" data-textFollow>SUBSCRIBERS</span>
+        <img class="upFollows" src="images/icon-down.svg"></img>
+        <span class="numberDays" data-numberDays><span class="downNumber">144 Today</span></span>
+      </div>
+    </div>
+    <div class="overview">
+      <h1 class="titleOverviewToday" data-titleOverview>Overview - Today</h1>
+      <div class="containerOverviewGrid">
+        <div class="containerPageViews" data-pageViews>
+          <h1 class="titleOverview">Page Views</h1>
+          <img class="iconOverview" src="images/icon-facebook.svg" align="right"></img>
+          <p class="newFollows">87</p>
+          <img class="iconPorcent" src="images/icon-up.svg" align="right"></img>
+          <p class="porcentFollows">3%</p>
+        </div>
+        <div class="containerLikesFacebook" data-likesFacebook>
+          <h1 class="titleOverview">Likes</h1>
+          <img class="iconOverview" src="images/icon-facebook.svg" align="right"></img>
+          <span class="newFollows">52</span>
+          <img id="downPorcentIcon" class="iconPorcent" src="images/icon-down.svg" align="right"></img>
+          <span class="porcentFollows"><span class="down">2%</span></span>
+        </div>
+        <div class="containerLikesInstagram" data-likesInstagram>
+          <h1 class="titleOverview">Likes</h1>
+          <img class="iconOverview" src="images/icon-instagram.svg" align="right"></img>
+          <span class="newFollows">5462</span>
+          <img id="upPorcentIcon" class="iconPorcent" src="images/icon-up.svg" align="right"></img>
+          <span class="porcentFollows">2257%</span>
+        </div>
+        <div class="containerProfileInstagram" data-profileInstagram>
+          <h1 class="titleOverview">Profile Views</h1>
+          <img class="iconOverview" src="images/icon-instagram.svg" align="right"></img>
+          <span class="newFollows">52k</span>
+          <img id="upPorcentIcon" class="iconPorcent" src="images/icon-up.svg" align="right"></img>
+          <span class="porcentFollows">1375%</span>
+        </div>
+        <div class="containerRetweetsTwitter" data-RetweetsTwitter>
+          <h1 class="titleOverview">Retweets</h1>
+          <img class="iconOverview" src="images/icon-twitter.svg" align="right"></img>
+          <span class="newFollows">117</span>
+          <img id="upPorcentIcon" class="iconPorcent" src="images/icon-up.svg" align="right"></img>
+          <span class="porcentFollows">303%</span>
+        </div>
+        <div class="containerLikesTwitter" data-likesTwitter>
+          <h1 class="titleOverview">Likes</h1>
+          <img class="iconOverview" src="images/icon-twitter.svg" align="right"></img>
+          <span class="newFollows">507</span>
+          <img id="upPorcentIcon" class="iconPorcent" src="images/icon-up.svg" align="right"></img>
+          <span class="porcentFollows">553%</span>
+        </div>
+        <div class="containerLikesYoutube" data-LikesYoutube>
+          <h1 class="titleOverview">Likes</h1>
+          <img class="iconOverview" src="images/icon-youtube.svg" align="right"></img>
+          <span class="newFollows">107</span>
+          <img id="downPorcentIcon" class="iconPorcent" src="images/icon-down.svg" align="right"></img>
+          <span class="porcentFollows"><span class="down">19%</span></span>
+        </div>
+        <div class="containerTotalViewsYoutube" data-totalViewsYoutube>
+          <h1 class="titleOverview">Total Views</h1>
+          <img class="iconOverview" src="images/icon-youtube.svg" align="right"></img>
+          <span class="newFollows">1407</span>
+          <img id="downPorcentIcon" class="iconPorcent" src="images/icon-down.svg" align="right"></img>
+          <span class="porcentFollows"><span class="down">12%</span></span>
+        </div>
+      </div>
+    </div>
+    <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Kleuber Aguiar</a>.
+  </div>
+  </main>
+  
+  <script type="text/javascript" src="jquery.js"></script>
+  <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
